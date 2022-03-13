@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BMI CALCULATOR</title>
+        <script>
+            function bmi(){
+                var height = parseFloat(document.getElementById("height").value)
+                var weight = parseFloat(document.getElementById("weight").value)
+                var bmi=weight/(height*height);
+                var userBMI=document.getElementById("bmi_index")
+                userBMI.textContent=bmi.toFixed(2);
+                document.getElementById(fname).innerHTML
+                if (bmi<18.5){
+                    document.getElementById("msg1").innerHTML="YOU ARE  UNDERWEIGHT"
+                }
+                else if(bmi>=18.5 && bmi<=24.9){
+                    document.getElementById("msg1").innerHTML="YOU ARE HEALTHY"
+                }
+                else if(bmi>=25 && bmi<=29.9){
+                    document.getElementById("msg1").innerHTML="YOU ARE OVERWEIGHT"
+                }
+                else if(bmi>=30 && bmi<=39.9){
+                    document.getElementById("msg1").innerHTML="YOU ARE OBESE"
+                }
+                else{
+                    document.getElementById("msg1").innerHTML="YOU ARE SEVERLY OBESE"
+                }
+            }
+        </script>
+    </head>
+    <body>
+            <b>Height in Meters</b>
+            <input type="text" id="h" placeholder=" Height(mts)">
+            <br><br>
+            <b> Weight in Kg</b>
+            <input type="text" id="w" placeholder=" Weight(Kg)">
+            <br><br>
+            <input type="button" value="Calculate BMI" onclick="bmi()"  id="click">
+            <br> <br>
+            <h4  id="bmi">BMI=<b id ="bmi_index"></b></h3>
+    </body>
+</html>
+

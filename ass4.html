@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            Enter number <input type="number" id="num1" onblur="check" placeholder="enter num1">
+            Enter number <input type="number" id="num2" placeholder="enter num2">
+            <button onclick="sum()">result</button>
+            <h3 sum id="result"></h3>
+        </body>
+        <script>
+            function check()
+            {
+                alert("enter only numbers")
+            }
+            function sum()
+         {
+            var num1=parseInt(document.getElementById("num1").value)
+            var num2=parseInt(document.getElementById("num2").value)
+            result= num1+ num2
+            var sum=document.getElementById("result")
+            sum.textContent=result
+         }
+        </script>
+    </head>
+</html>

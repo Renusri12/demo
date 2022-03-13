@@ -1,0 +1,77 @@
+h1,h2{
+    color:blue;
+    text-align: center;
+
+}
+p{
+    color:black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+form{
+    background-color: beige;
+}
+
+header{
+    text-align: center;
+    background-color: aliceblue;
+
+}
+.banner{
+    max-width: 100%;
+}
+ul{
+
+    max-width: fit-content;
+}
+.welcome{
+    
+    text-align: center;
+    padding: 10%;
+    position:absolute;
+    top: 10%;
+    left:0%
+    
+}
+.main-nav{
+    padding:10%;
+    position:absolute;
+    top:5%;
+    
+    left:0%;
+}
+.image
+{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
+    width:100%
+   }
+   
+   .join,.images,.games,.contact,.details
+   {
+       font-size:20px;
+       font-style: italic;
+       background-color: solid rgb(35, 131, 99);
+       padding: 10px;
+       text-align: center;
+       background-color:whitesmoke;
+       text-decoration:wavy;
+   }
+   .submit
+   {
+       text-align:left;
+       text-decoration: underline;
+       color: darkred;
+       
+   }
+   .button{
+       color: black;
+       text-align: center;
+       
+   }
+   .list{
+       align-content: middle;
+   }
